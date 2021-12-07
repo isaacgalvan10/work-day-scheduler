@@ -11,6 +11,9 @@ textarea {
   color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  height: 100%;
+  width: 100%;
+  margin-top: -32px;
 }
 
 .jumbotron {
@@ -23,6 +26,9 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
 }
 
 .time-block {
@@ -34,17 +40,31 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: end;
+  padding: 10px 20px;
+  height: 100%;
+}
+
+.hour p {
+  margin-top: -32px;
 }
 
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color: black;
 }
 
 .present {
@@ -58,14 +78,20 @@ textarea {
 }
 
 .saveBtn {
+  border: none;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+/*# sourceMappingURL=style.css.map */

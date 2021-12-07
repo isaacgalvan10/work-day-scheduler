@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,11 +28,29 @@
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+    <div id="task-container" class="container">
+      <div class="row">
+        <div class="hour">
+          <p>9AM</p>
+        </div>
+        <div class="description" data-hour="9">
+          <textarea data-task="9" class="task" placeholder="This is a task 1"></textarea>
+        </div>
+        <button class="saveBtn"><i class="fas fa-save"></i></button>
+      </div>
+      <div class="row">
+        <div class="hour">
+          <p>10AM</p>
+        </div>
+        <div class="description" data-hour="10">
+          <textarea data-task="10" class="task" placeholder="This is a task 2"></textarea>
+        </div>
+        <button class="saveBtn"><i class="fas fa-save"></i></button>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
